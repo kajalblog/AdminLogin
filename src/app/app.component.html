@@ -1,0 +1,133 @@
+<mat-toolbar class="navbar">
+  <span>Green Tiger | Admin</span>
+  <div>
+    <!-- <span class="material-icons">
+      account_circle
+    </span> -->
+    <span>Admin</span>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="User">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>LogOut</span>
+      </button>
+    </mat-menu>
+
+
+    <!-- <span>Service</span> -->
+  </div>
+</mat-toolbar>
+<!-- <app-admin-login></app-admin-login> -->
+<router-outlet>
+  <!-- <li routerLink="admin">Admin</li> -->
+</router-outlet>
+
+
+
+
+
+<!-- <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+<div class="example-button-row">
+  <button mat-raised-button>Basic</button>
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button disabled>Disabled</button>
+  <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+</div> -->
+
+
+<!-- <mat-card>Simple card</mat-card>
+<div class="mat-display-4">Display 4</div>
+<div class="mat-display-3">Display 3</div>
+<div class="mat-display-2">Display 2</div>
+<div class="mat-display-1">Display 1</div>
+<mat-card>
+  <div class="mat-headline"> This is Heading (h1)</div>
+  <div class="mat-title">This is Title(h2)</div>
+  <div class="mat-subheading-2">This is Subheading(h3)</div>
+  <div class="mat-subheading-1">This is Subheading(h4)</div>
+
+</mat-card>
+<mat-card>
+  <div class="mat-body-1">This is body text</div>
+  <div class="mat-body-2">This is body text</div>
+  <div class="mat-caption">This is caption text</div>
+
+</mat-card>
+
+<mat-card>
+  <mat-card-content>
+    <div class="mat-typography">
+      <div class="mat-title">Typograpy Text</div>
+      <h1>This is h1 text</h1>
+      <h2>This is h2 text</h2>
+      <h3>This is h3 text</h3>
+    </div>
+  </mat-card-content>
+</mat-card>
+<mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+<span class="material-icons">
+  account_circle
+</span>
+<span class="material-icons">
+  star_rate
+</span>
+<span class="material-icons">
+  leaderboard
+</span> -->
+<!-- <p>
+  Icon with a badge
+  <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+  Include text description of the icon's meaning for screen-readers
+  <span class="cdk-visually-hidden">
+    Example with a home icon with overlaid badge showing the number 15
+  </span>
+</p>
+<div>Material Badge
+  <div>
+    <span matBadge="5" matBadgePosition="below after">Notification</span>
+  </div>
+  <br>
+  <div>
+
+    <span matBadge="5" matBadgePosition="above before">Notification</span>
+  </div>
+  <br>
+  <div><span matBadge="5" matBadgePosition="above after">Notification</span>
+  </div>
+</div>
+<button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+  <mat-icon>home</mat-icon>
+</button>
+<mat-toolbar color="success" class="navbar">
+  <h1>Angular material</h1>
+  <div>
+    <span>Home</span>
+    <span>About</span>
+    <span>Service</span>
+  </div>
+</mat-toolbar>
+<mat-form-field appearance="outline">
+  <mat-label>Outline form field</mat-label>
+  <input matInput placeholder="Placeholder">
+  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+  <mat-hint>Hint</mat-hint>
+</mat-form-field> -->
+<!-- <mat-icon aria-hidden="false" aria-label="Example home icon">Add</mat-icon> -->
+<!-- <mat-form-field appearance="fill">
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field> -->
+<!-- <h1>{{title |uppercase}}</h1>
+<h1>{{title|lowercase}}</h1>
+<h1>{{title}}</h1>
+<h2>{{today |date}}</h2>
+<h2>{{today |date:'fullDate'}}</h2>
+<h2>{{title |slice :2:8}}</h2>
+<h2>{{users|json}}</h2> -->
