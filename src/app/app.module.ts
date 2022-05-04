@@ -26,6 +26,9 @@ import { AuthModule } from '@angular/fire/auth';
 import { AuthenticationService } from '../app/services/authentication.service';
 import { MatMenuModule } from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AuthGuard } from './auth/auth.guard';
+
 
 // import { AngularFirestoreModule } from '@angular/fire/firestore';
 // import { AngularFireModule } from '@angular/fire';
@@ -50,6 +53,8 @@ const firebaseConfig = {
     AdminLoginComponent,
     HomeComponent,
     AboutComponent,
+    PageNotFoundComponent,
+
 
   ],
   imports: [
@@ -76,7 +81,7 @@ const firebaseConfig = {
 
 
   ],
-  providers: [AuthenticationService],
+  providers: [AuthenticationService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,34 +1,39 @@
 <!-- <p>admin-login works!</p> -->
 
 <!-- <li routerLink="/admin">Admin</li> -->
+<div class="form-container mat-elvation-z5">
+    <mat-card>
+        <mat-card-content>
+            <div class="header">
+                <h2>Welcome Admin</h2>
+            </div>
+            <div class="alert alert-danger" role="alert">
+                {{error}}
+            </div>
+            <form [formGroup]="adminlogin" (ngSubmit)="onLogin()">
+                <div class="email-input">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email Address *</mat-label>
+                        <input class="full-width" matInput placeholder="Enter Email *" formControlName="username">
 
-<mat-card>
-    <mat-card-content>
-        <div class="header">
-            <h2>Welcome Admin</h2>
-        </div>
-        <form [formGroup]="adminlogin" (ngSubmit)="onLogin()">
-            <div class="email-input">
-                <mat-form-field appearance="outline">
-                    <mat-label>Email Address *</mat-label>
-                    <input class="full-width" matInput placeholder="Enter Email *" formControlName="username">
-                    <!-- <mat-error *ngIf="submitted && username.errors" class="invalid-feedback">
-                        <div *ngIf="f.username.errors.required">Email Name is required</div>
+                        <!-- <div *ngIf="form['username'].errors['required']">Email Name is required</div> -->
+                        <!-- <mat-error *ngIf="submitted && ['username'].errors" class="invalid-feedback"></mat-error>
                     </mat-error> -->
-                </mat-form-field>
-            </div>
-            <div class="email-input">
-                <mat-form-field appearance="outline">
-                    <mat-label>Password *</mat-label>
-                    <input type="password" class="full-width" matInput placeholder="Enter Email *"
-                        formControlName="password" required>
+                    </mat-form-field>
+                </div>
+                <div class="email-input">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Password *</mat-label>
+                        <input type="password" class="full-width" matInput placeholder="Enter Email *"
+                            formControlName="password" required>
 
-                </mat-form-field>
-            </div>
-            <div>
-                <button mat-raised-button>Login</button>
-            </div>
-        </form>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <button mat-raised-button>Login</button>
+                </div>
+            </form>
 
-    </mat-card-content>
-</mat-card>
+        </mat-card-content>
+    </mat-card>
+</div>

@@ -5,17 +5,18 @@
       account_circle
     </span> -->
     <span>Admin</span>
-
-    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="User">
-      <mat-icon>more_vert</mat-icon>
+    <button mat-raised-button color="accent" *ngIf="isLoggedIn">Logout</button>
+    <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="User"
+      *ngIf="isLoggedIn">
+      <mat-icon>more_vert</mat-icon>s
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item>
         <mat-icon>exit_to_app</mat-icon>
         <span>LogOut</span>
       </button>
-    </mat-menu>
-
+    </mat-menu> -->
+    <!-- <button>LogOut</button> -->
 
     <!-- <span>Service</span> -->
   </div>
@@ -24,10 +25,7 @@
 <router-outlet>
   <!-- <li routerLink="admin">Admin</li> -->
 </router-outlet>
-
-
-
-
+<!-- <app-reactive-form></app-reactive-form> -->
 
 <!-- <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
 <div class="example-button-row">
@@ -38,8 +36,6 @@
   <button mat-raised-button disabled>Disabled</button>
   <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
 </div> -->
-
-
 <!-- <mat-card>Simple card</mat-card>
 <div class="mat-display-4">Display 4</div>
 <div class="mat-display-3">Display 3</div>
